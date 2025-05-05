@@ -1,7 +1,49 @@
-import React from "react";
-
+import React, {useContext} from "react";
+import {AuthContext} from "../ContexFile/Context";
+import {MdOutlineEdit} from "react-icons/md";
+import {Link} from "react-router";
 const MyProfile = () => {
-  return <div>MyProfile</div>;
+
+  const {user, loding} = useContext(AuthContext);
+  console.log(user);
+  console.log(user?.displayName);
+  const photo = user?.photoURL;
+  console.log(user?.photoURL);
+
+  return (
+    <div className="min-h-[calc(100vh-100px)] flex justify-center  ">
+      {loding ? (
+        <div className="w-[228px] h-[228px] flex justify-center items-center">
+          <span className="loading loading-spinner  loading-xl"></span>
+        </div>
+      ) : (
+        user && (
+          <div className="flex flex-col mt-20 relative">
+            <div className="  border-4 border-green-500 h-[228px] w-[228px] flex justify-center items-center rounded-full">
+              <img
+                className="w-45 rounded-full"
+                src={photo}
+                alt=""
+                referrerPolicy="no-referrer"
+              />
+            </div>
+<h1 className="text-center font-semibold mt-2">{user?.email}</h1>
+            <h1 className=" font-bold text-2xl mt-5 text-center">
+              {user?.displayName}
+            </h1>
+            <div className="absolute top-40 left-43  h-12 w-12 bg-white border-2 rounded-full">
+              <span className="flex justify-center h-full w-full items-center">
+                <Link to={"/updateinfo"}>
+                  {" "}
+                  <MdOutlineEdit className="h-7 w-7" />
+                </Link>
+              </span>
+            </div>
+          </div>
+        )
+      )}
+    </div>
+  );
 };
 
 export default MyProfile;

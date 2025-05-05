@@ -111,7 +111,7 @@ const Login = () => {
           </Link>{" "}
         </h1>
 
-        <button type="submit" className="chill ">
+        <button type="submit" className="btn btn-primary ">
           Login
         </button>
       </form>

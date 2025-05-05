@@ -46,6 +46,11 @@ const NavBAr = () => {
               {" "}
               <h1>Home</h1>
             </NavLink>
+
+
+
+
+
             <NavLink
               className={({isActive}) =>
                 `p-1 lg:px-2 ${
@@ -57,6 +62,13 @@ const NavBAr = () => {
               {" "}
               <h1> Bills Page</h1>
             </NavLink>
+
+
+
+
+
+
+
             <NavLink
               className={({isActive}) =>
                 `p-1 lg:px-2 ${
@@ -68,6 +80,12 @@ const NavBAr = () => {
               {" "}
               <h1>My Profile</h1>
             </NavLink>
+
+
+
+
+
+            
           </div>
         </div>
 
@@ -81,9 +99,9 @@ const NavBAr = () => {
               <div className="flex flex-row gap-3  justify-end">
                 <div className="dropdown dropdown-end">
                   <div tabIndex={0} role="button" className=" m-1">
-                    <div className="">
+                    <div className=" ">
                       <img
-                        className="rounded-full md:w-[60px] md:h-[50px] "
+                        className=" md:w-[60px] rounded-full md:h-[50px]  "
                         src={photo}
                         alt=""
                         referrerPolicy="no-referrer"
@@ -143,14 +161,6 @@ const NavBAr = () => {
               </li>
             </ul>
           </div>
-
-          {/* <div className="dropdown dropdown-end">
-  <div tabIndex={0} role="button" className="btn m-1">Click  ⬇️</div>
-  <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-    <li><a>Item 1</a></li>
-    <li><a>Item 2</a></li>
-  </ul>
-</div> */}
         </div>
       </nav>
     </div>

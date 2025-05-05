@@ -5,6 +5,7 @@ import HomePage from "../Components/HomePage/HomePage";
 import Login from "../Components/Authentication/Login";
 import BillsPage from "../Components/BillsPage/BillsPage";
 import MyProfile from "../Components/MyProfile/MyProfile";
+import UpdateInfo from "../Components/MyProfile/UpdateInfo";
 
 export const Route = createBrowserRouter([
   {
@@ -27,7 +28,10 @@ export const Route = createBrowserRouter([
       {
         path: "/profile",
         element: <MyProfile></MyProfile>,
-      },
+      },{
+        path: '/updateinfo',
+        element: <UpdateInfo></UpdateInfo>
+      }
     ],
   },
   {},

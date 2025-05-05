@@ -38,9 +38,10 @@ export const AuthProvider = ({children}) => {
   const googleLogin = () => {
     return signInWithPopup(Auth, provider);
   };
-const forgotPass= (email)=>{
-    return sendPasswordResetEmail(Auth,email)
-}
+  const forgotPass = (email) => {
+    return sendPasswordResetEmail(Auth, email);
+  };
+
   const exportDetais = {
     createuser,
     user,
@@ -48,7 +49,7 @@ const forgotPass= (email)=>{
     loginUser,
     logout,
     googleLogin,
-    forgotPass
+    forgotPass,
   };
 
   return <AuthContext value={exportDetais}> {children}</AuthContext>;

@@ -15,6 +15,7 @@ const Registration = () => {
 
     const email = e.target.email.value;
     const password = e.target.password.value;
+    const name = e.target.name.value;
     const photo = e.target.photo.value;
     console.log(photo);
 
@@ -24,7 +25,7 @@ const Registration = () => {
 
         console.log(result);
 
-        updateProfile(user, {photoURL: photo});
+        updateProfile(user, {photoURL: photo, displayName: name});
 
         navigate("/login");
       })
@@ -67,6 +68,14 @@ const Registration = () => {
 
         <input
           className="border-2 w-4/5 md:w-3/6 md:h-15  font-semibold p-2 h-12 rounded-full shadow-2xl"
+          type="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <input
+          className="border-2 w-4/5 md:w-3/6 md:h-15  font-semibold p-2 h-12 rounded-full shadow-2xl"
           type="email"
           name="email"
           placeholder="Enter your email"
@@ -100,7 +109,7 @@ const Registration = () => {
           </Link>{" "}
         </h1>
 
-        <button type="submit" className="chill ">
+        <button type="submit" className="btn btn-primary ">
           Sign Up
         </button>
       </form>

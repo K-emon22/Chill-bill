@@ -5,7 +5,7 @@ const Footer = () => {
 const {time}=useContext(AuthContext)
 
     return (
-        <div>
+        <div className='mt-20'>
            {
             time? <div>emon</div>: <div>footer</div>
            }

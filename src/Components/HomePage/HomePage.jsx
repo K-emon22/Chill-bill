@@ -5,6 +5,8 @@ import QandA from "./QandA/QandA";
 import ReviewSection from "./ReviewSection/ReviewSection";
 import Notice from "./Notice/Notice";
 
+import Endsection from "./LastSection/Endsection";
+
 const HomePage = () => {
   return (
     <div className="">
@@ -23,6 +25,7 @@ const HomePage = () => {
       <div className="mt-20">
         <QandA></QandA>
       </div>
+      <Endsection></Endsection>
     </div>
   );
 };

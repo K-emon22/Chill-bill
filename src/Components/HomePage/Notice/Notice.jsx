@@ -26,7 +26,7 @@ const Notice = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
+    <div className=" mx-auto p-6">
       <h2 className="font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-10">
         Recent Notices
       </h2>

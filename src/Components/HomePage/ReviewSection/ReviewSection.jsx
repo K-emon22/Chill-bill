@@ -63,7 +63,7 @@ const ReviewSection = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto p-4">
+    <div className=" mx-auto p-4">
       <h2 className="font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-10">
         Customer Reviews
       </h2>

@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import {EmblaCarousel} from "./Carousel/EmblaCarousel";
 
 const HomePage = () => {
-    return (
-        <div>
-            homePage 
-        </div>
-    );
+  return (
+    <div className="">
+      <div className="mt-10">
+        <EmblaCarousel></EmblaCarousel>
+      </div>
+    </div>
+  );
 };
 
 export default HomePage;

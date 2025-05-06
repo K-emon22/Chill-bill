@@ -45,3 +45,15 @@
     transform: scale(0.98);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+.embla {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+  

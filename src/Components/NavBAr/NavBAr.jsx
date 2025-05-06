@@ -35,15 +35,21 @@ const NavBAr = () => {
         </div>
         <div className="hidden md:block m-auto">
           <div className="my-auto flex flex-row gap-2 font-semibold mx-auto ">
+
+
+
+
+
+
+
             <NavLink
               className={({isActive}) =>
                 `p-1  lg:px-2 ${
                   isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
                 }`
               }
-              to={"/"}
+              to={"/home"}
             >
-              {" "}
               <h1>Home</h1>
             </NavLink>
 
@@ -51,17 +57,29 @@ const NavBAr = () => {
 
 
 
-            <NavLink
+            {
+                user? <NavLink
+                className={({isActive}) =>
+                  `p-1 lg:px-2 ${
+                    isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
+                  }`
+                }
+                to={"/bills"}
+              >
+                {" "}
+                <h1> Bills Page</h1>
+              </NavLink>: <NavLink
               className={({isActive}) =>
                 `p-1 lg:px-2 ${
                   isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
                 }`
               }
-              to={"/bills"}
+              to={"/login"}
             >
               {" "}
               <h1> Bills Page</h1>
             </NavLink>
+            }
 
 
 
@@ -85,7 +103,7 @@ const NavBAr = () => {
 
 
 
-            
+
           </div>
         </div>
 
@@ -132,7 +150,7 @@ const NavBAr = () => {
             ) : (
               <Link to={"/login"}>
                 <div className="flex justify-end">
-                  <button className="chill hidden   md:block"> Login </button>
+                  <button className="btn btn-primary hidden   md:block"> Login </button>
                 </div>
               </Link>
             )}

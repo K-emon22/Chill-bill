@@ -12,7 +12,7 @@ const NavBAr = () => {
   const photo = user?.photoURL;
 
   return (
-    <div className="sticky top-0 z-50 bg-white">
+    <div className="sticky top-0 z-50 bg-white mx-[5%]">
       <nav className=" justify-between flex flex-row h-[71px]  ">
         <div className="flex flex-row gap-2">
           {loding ? (

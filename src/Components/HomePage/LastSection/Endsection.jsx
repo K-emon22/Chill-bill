@@ -26,7 +26,7 @@ const Endsection = () => {
   ];
 
   return (
-    <section className="py-12 px-2 rounded-lg bg-gray-100">
+    <section className="mt-20 px-2 rounded-lg ">
       <div className="container ">
         <h2 className="font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-10">
           Latest Blog Posts

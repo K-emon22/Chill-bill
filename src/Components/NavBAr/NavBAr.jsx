@@ -12,7 +12,7 @@ const NavBAr = () => {
   const photo = user?.photoURL;
 
   return (
-    <div className="sticky top-0 z-50">
+    <div className="sticky top-0 z-50 bg-white">
       <nav className=" justify-between flex flex-row h-[71px]  ">
         <div className="flex flex-row gap-2">
           {loding ? (
@@ -48,7 +48,7 @@ const NavBAr = () => {
                   isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
                 }`
               }
-              to={"/home"}
+              to={"/"}
             >
               <h1>Home</h1>
             </NavLink>

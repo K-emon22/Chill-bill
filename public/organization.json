@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "WASA",
+      "img": "https://i.ibb.co.com/MxX0Wr4x/1601317670-1.jpg",
+      "payment": "Water Bill",
+      "description": "Pay your WASA water bills easily through our secure service and enjoy an uninterrupted water supply daily."
+    },
+    {
+      "id": 2,
+      "name": "BTCL",
+      "img": "https://i.ibb.co.com/zhRyXCzs/images.png",
+      "payment": "Internet Bill",
+      "description": "Easily manage and pay your BTCL internet bills online to maintain smooth, fast, and uninterrupted connections."
+    },
+    {
+      "id": 3,
+      "name": "Titash Gas",
+      "img": "https://i.ibb.co.com/fGS5j02b/titash-gas-logo-png-seeklogo-333374.png",
+      "payment": "Gas Bill",
+      "description": "Quickly settle your Titash Gas bills through our platform and ensure continuous gas supply without any delays."
+    },
+    {
+      "id": 4,
+      "name": "DPDC",
+      "img": "https://i.ibb.co.com/RGRCz9yV/unnamed.png",
+      "payment": "Electricity Bill Prepaid",
+      "description": "Recharge your DPDC prepaid electricity meter instantly to maintain a stable and uninterrupted electricity supply."
+    },
+    {
+      "id": 5,
+      "name": "DESCO",
+      "img": "https://i.ibb.co.com/84XNtrjr/Desco-Voucher-Management-System-Logo-2023.webp",
+      "payment": "Electricity Bill",
+      "description": "Easily pay your DESCO electricity bills online through a quick and reliable system for uninterrupted service."
+    },
+    {
+      "id": 6,
+      "name": "BD Bank",
+      "img": "https://i.ibb.co.com/GQyJzV3T/svg.png",
+      "payment": "EMI Payment",
+      "description": "Manage your BD Bank EMI payments with ease every month and stay updated with your financial responsibilities."
+    }
+  ]

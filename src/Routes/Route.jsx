@@ -6,6 +6,7 @@ import Login from "../Components/Authentication/Login";
 import BillsPage from "../Components/BillsPage/BillsPage";
 import MyProfile from "../Components/MyProfile/MyProfile";
 import UpdateInfo from "../Components/MyProfile/UpdateInfo";
+import Loding from "../Components/Loding/Loding";
 
 export const Route = createBrowserRouter([
   {
@@ -13,8 +14,10 @@ export const Route = createBrowserRouter([
     element: <Root> </Root>,
     children: [
       {
-        path: "/home",
+        path: "/",
         element: <HomePage></HomePage>,
+        loader: () => fetch("organization.json"),
+        hydrateFallbackElement: <Loding></Loding>,
       },
       {path: "/registration", element: <Registration></Registration>},
       {
@@ -28,10 +31,11 @@ export const Route = createBrowserRouter([
       {
         path: "/profile",
         element: <MyProfile></MyProfile>,
-      },{
-        path: '/updateinfo',
-        element: <UpdateInfo></UpdateInfo>
-      }
+      },
+      {
+        path: "/updateinfo",
+        element: <UpdateInfo></UpdateInfo>,
+      },
     ],
   },
   {},

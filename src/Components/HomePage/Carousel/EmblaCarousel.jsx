@@ -71,7 +71,7 @@ export const EmblaCarousel = () => {
 
     {
       image: "https://i.ibb.co.com/DPn3HdrL/bank-atm-people-1284-26195-jpg.jpg",
-      text: "Skip standing in long lines for banking.",
+      text: "Skip standing in long lines for Payment.",
     },
     {
       image:
@@ -94,7 +94,7 @@ export const EmblaCarousel = () => {
                   <h1 className="text-white  sm:text-xl md:text-2xl font-semibold sm:font-bold">
                     {slide.text}
                   </h1>
-                  <button className="btn btn-primary w-[102px] text-white font-semibold">
+                  <button className="btn btn-primary w-[150px] text-white font-semibold">
                     {loding ? (
                       <span className="loading  loading-spinner loading-xl"></span>
                     ) : user ? (
@@ -110,7 +110,7 @@ export const EmblaCarousel = () => {
         </div>
       </div>
 
-      <div className="   w-5/10 mt-2 mx-auto bg-black/30 flex space-x-4 border-2 border-black/30 rounded-full py-2 px-4  justify-between">
+      <div className="   w-5/10 mt-5 mx-auto bg-black/30 flex space-x-4 border-2 border-black/30 rounded-full py-2 px-4  justify-between">
         <button
           onClick={scrollPrev}
           disabled={isPlaying}

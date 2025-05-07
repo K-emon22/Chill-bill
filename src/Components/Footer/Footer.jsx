@@ -1,6 +1,9 @@
-import React from "react";
+import React, {useContext} from "react";
+import {AuthContext} from "../ContexFile/Context";
+import {NavLink} from "react-router";
 
 const Footer = () => {
+  const {user} = useContext(AuthContext);
   return (
     <div className="mt-20">
       <footer className="footer footer-horizontal footer-center bg-black text-primary-content p-10">
@@ -17,6 +20,58 @@ const Footer = () => {
           </p>
           <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
         </aside>
+
+        <div className=" flex flex-row">
+          <NavLink
+            className={({isActive}) =>
+              `p-1  lg:px-2 ${
+                isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
+              }`
+            }
+            to={"/"}
+          >
+            <h1>Home</h1>
+          </NavLink>
+
+          {user ? (
+            <NavLink
+              className={({isActive}) =>
+                `p-1 lg:px-2 ${
+                  isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
+                }`
+              }
+              to={"/bills"}
+            >
+              {" "}
+              <h1> Bills Page</h1>
+            </NavLink>
+          ) : (
+            <NavLink
+              className={({isActive}) =>
+                `p-1 lg:px-2 ${
+                  isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
+                }`
+              }
+              to={"/login"}
+            >
+              {" "}
+              <h1> Bills Page</h1>
+            </NavLink>
+          )}
+
+          <NavLink
+            className={({isActive}) =>
+              `p-1 lg:px-2 ${
+                isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
+              }`
+            }
+            to={"/profile"}
+          >
+            {" "}
+            <h1>My Profile</h1>
+          </NavLink>
+        </div>
+
         <nav>
           <div className="grid grid-flow-col gap-4">
             <a href="https://twitter.com/ProgrammingHero" target="_blank">

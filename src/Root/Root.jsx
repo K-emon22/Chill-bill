@@ -1,5 +1,7 @@
 import React, {useContext} from "react";
 import {Outlet, useNavigation} from "react-router";
+import {ToastContainer} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import NavBAr from "../Components/NavBAr/NavBAr";
 import Footer from "../Components/Footer/Footer";
 import {AuthContext} from "../Components/ContexFile/Context";
@@ -19,6 +21,11 @@ const Root = () => {
       </div>
 
       <Footer></Footer>
+      <ToastContainer
+        style={{top: "70px", width: "85%"}}
+        position="top-right"
+        autoClose={1000}
+      />
     </div>
   );
 };

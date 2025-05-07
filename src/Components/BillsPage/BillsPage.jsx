@@ -8,13 +8,12 @@ const BillsPage = () => {
 
   window.scroll({
     top: 0,
-    behavior: 'smooth'
+    behavior: "smooth",
   });
 
   return (
     <div className="mt-10">
       <h1 className="font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 mx-10 sm:mx-0">
-        {" "}
         Billing Dashboard
       </h1>
       {allBill.map((bill) => (
@@ -28,9 +27,9 @@ const BillsPage = () => {
                 <span className="loading loading-spinner loading-xl "></span>
               </div>
             ) : (
-              <div className="  my-auto  sm:w-30">
+              <div className="  my-auto flex justify-center h-full w-full items-center sm:w-30">
                 <img
-                  className="aspect-[4/2] rounded-lg sm:aspect-auto  my-auto  sm:w-30"
+                  className="aspect-[4/2] h-full w-full rounded-lg sm:aspect-auto  flex justify-center items-center  sm:w-30"
                   src={bill.image}
                   alt=""
                 />

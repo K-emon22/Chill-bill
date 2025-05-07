@@ -1,4 +1,4 @@
-import {useContext, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import {HiMenuAlt3} from "react-icons/hi";
 import {HiOutlineX} from "react-icons/hi";
 import {Link, NavLink} from "react-router";
@@ -7,8 +7,13 @@ import {AuthContext} from "../ContexFile/Context";
 const NavBAr = () => {
   const [opMenu, setOpmenu] = useState(true);
   const {user, loding, logout} = useContext(AuthContext);
+  const [taka, setTaka] = useState(10000);
 
-  console.log(user);
+  useEffect(() => {
+    const totalBill = parseFloat(localStorage.getItem("totalPaid")) || 0;
+    setTaka(10000 - totalBill);
+  }, [localStorage.getItem("totalPaid")]);
+
   const photo = user?.photoURL;
 
   return (
@@ -35,13 +40,6 @@ const NavBAr = () => {
         </div>
         <div className="hidden md:block m-auto">
           <div className="my-auto flex flex-row gap-2 font-semibold mx-auto ">
-
-
-
-
-
-
-
             <NavLink
               className={({isActive}) =>
                 `p-1  lg:px-2 ${
@@ -53,39 +51,35 @@ const NavBAr = () => {
               <h1>Home</h1>
             </NavLink>
 
-
-
-
-
-            {
-                user? <NavLink
+            {user ? (
+              <NavLink
                 className={({isActive}) =>
                   `p-1 lg:px-2 ${
-                    isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
+                    isActive
+                      ? "bg-[rgb(238,102,102)] rounded-lg text-white"
+                      : ""
                   }`
                 }
                 to={"/bills"}
               >
                 {" "}
                 <h1> Bills Page</h1>
-              </NavLink>: <NavLink
-              className={({isActive}) =>
-                `p-1 lg:px-2 ${
-                  isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
-                }`
-              }
-              to={"/login"}
-            >
-              {" "}
-              <h1> Bills Page</h1>
-            </NavLink>
-            }
-
-
-
-
-
-
+              </NavLink>
+            ) : (
+              <NavLink
+                className={({isActive}) =>
+                  `p-1 lg:px-2 ${
+                    isActive
+                      ? "bg-[rgb(238,102,102)] rounded-lg text-white"
+                      : ""
+                  }`
+                }
+                to={"/login"}
+              >
+                {" "}
+                <h1> Bills Page</h1>
+              </NavLink>
+            )}
 
             <NavLink
               className={({isActive}) =>
@@ -98,12 +92,6 @@ const NavBAr = () => {
               {" "}
               <h1>My Profile</h1>
             </NavLink>
-
-
-
-
-
-
           </div>
         </div>
 
@@ -133,7 +121,7 @@ const NavBAr = () => {
                     <li className="flex flex-row">
                       <h1>
                         <span className="font-semibold">Balance: </span>
-                        <span className="font-bold">1000</span>Taka
+                        <span className="font-bold">{taka}</span>Taka
                       </h1>
                     </li>
                     <li className="">
@@ -150,7 +138,10 @@ const NavBAr = () => {
             ) : (
               <Link to={"/login"}>
                 <div className="flex justify-end">
-                  <button className="btn btn-primary hidden   md:block"> Login </button>
+                  <button className="btn btn-primary hidden   md:block">
+                    {" "}
+                    Login{" "}
+                  </button>
                 </div>
               </Link>
             )}
@@ -171,12 +162,62 @@ const NavBAr = () => {
               tabIndex={0}
               className="dropdown-content menu bg-base-100 top-10 absolute rounded-box z-1 w-52 p-2 shadow-sm"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Item 2</a>
-              </li>
+              <NavLink
+                className={({isActive}) =>
+                  `p-1  lg:px-2 ${
+                    isActive
+                      ? "bg-[rgb(238,102,102)] rounded-lg text-white"
+                      : ""
+                  }`
+                }
+                to={"/"}
+              >
+                <h1>Home</h1>
+              </NavLink>
+
+              {user ? (
+                <NavLink
+                  className={({isActive}) =>
+                    `p-1 lg:px-2 ${
+                      isActive
+                        ? "bg-[rgb(238,102,102)] rounded-lg text-white"
+                        : ""
+                    }`
+                  }
+                  to={"/bills"}
+                >
+                  {" "}
+                  <h1> Bills Page</h1>
+                </NavLink>
+              ) : (
+                <NavLink
+                  className={({isActive}) =>
+                    `p-1 lg:px-2 ${
+                      isActive
+                        ? "bg-[rgb(238,102,102)] rounded-lg text-white"
+                        : ""
+                    }`
+                  }
+                  to={"/login"}
+                >
+                  {" "}
+                  <h1> Bills Page</h1>
+                </NavLink>
+              )}
+
+              <NavLink
+                className={({isActive}) =>
+                  `p-1 lg:px-2 ${
+                    isActive
+                      ? "bg-[rgb(238,102,102)] rounded-lg text-white"
+                      : ""
+                  }`
+                }
+                to={"/profile"}
+              >
+                {" "}
+                <h1>My Profile</h1>
+              </NavLink>
             </ul>
           </div>
         </div>

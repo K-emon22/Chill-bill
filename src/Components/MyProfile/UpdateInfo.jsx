@@ -1,13 +1,13 @@
 import React, {useContext} from "react";
 import {AuthContext} from "../ContexFile/Context";
 import {updateProfile} from "firebase/auth";
-import { useNavigate } from "react-router";
+import {useNavigate} from "react-router";
 
 const UpdateInfo = () => {
   const {user} = useContext(AuthContext);
 
   console.log(user);
-const navigate=useNavigate()
+  const navigate = useNavigate();
   const handleUpdate = (e) => {
     e.preventDefault();
 
@@ -19,7 +19,7 @@ const navigate=useNavigate()
       displayName: name,
       photoURL: profile,
     });
-navigate('/profile')
+    navigate("/profile");
   };
 
   return (

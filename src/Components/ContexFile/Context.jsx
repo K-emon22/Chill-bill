@@ -16,6 +16,8 @@ export const AuthProvider = ({children}) => {
   const provider = new GoogleAuthProvider();
   const [user, setUser] = useState(null);
   const [loding, setLoding] = useState(true);
+  const [loding2, setLoding2] = useState(true);
+
   const createuser = (email, password) => {
     return createUserWithEmailAndPassword(Auth, email, password);
   };
@@ -27,6 +29,7 @@ export const AuthProvider = ({children}) => {
     const unsubcribe = onAuthStateChanged(Auth, (currentuser) => {
       setUser(currentuser);
       setLoding(false);
+      setLoding2(false);
     });
     return () => unsubcribe();
   }, []);
@@ -46,6 +49,7 @@ export const AuthProvider = ({children}) => {
     createuser,
     user,
     loding,
+    loding2,
     loginUser,
     logout,
     googleLogin,

@@ -2,161 +2,154 @@
     {
       "id": 1,
       "bill_type": "Electricity Bill",
-      "icon": "https://example.com/icons/electricity.png",
+      "image": "https://i.ibb.co.com/84XNtrjr/Desco-Voucher-Management-System-Logo-2023.webp",
+      "icon": "https://i.ibb.co.com/dJw4k50N/electricity-bill-icon-lighting-utilities-yellow-glowing-light-bulb-house-2-HW04-YH.jpg",
       "organization": "Desco",
       "amount": 300,
-      "dueDate": "March 25, 2025"
+      "dueDate": "May 12, 2025"
     },
     {
       "id": 2,
       "bill_type": "Electricity Bill",
-      "icon": "https://example.com/icons/electricity.png",
-      "organization": "REB",
+      "image": "https://i.ibb.co.com/RGRCz9yV/unnamed.png",
+      "icon": "https://i.ibb.co.com/dJw4k50N/electricity-bill-icon-lighting-utilities-yellow-glowing-light-bulb-house-2-HW04-YH.jpg",
+      "organization": "DPDc",
       "amount": 250,
-      "dueDate": "April 10, 2025"
+      "dueDate": "May 13, 2025"
     },
     {
       "id": 3,
       "bill_type": "Electricity Bill",
-      "icon": "https://example.com/icons/electricity.png",
+      "image": "https://i.ibb.co.com/qGqpRsB/palli-bidyut-board-logo-png-seeklogo-369105.png",
+      "icon": "https://i.ibb.co.com/dJw4k50N/electricity-bill-icon-lighting-utilities-yellow-glowing-light-bulb-house-2-HW04-YH.jpg",
       "organization": "PDB",
       "amount": 450,
-      "dueDate": "April 22, 2025"
+      "dueDate": "May 14, 2025"
     },
     {
       "id": 4,
       "bill_type": "Electricity Bill",
-      "icon": "https://example.com/icons/electricity.png",
+      "image": "https://i.ibb.co.com/dsf0fvLZ/nesco-logo-png-seeklogo-382775.png",
+      "icon": "https://i.ibb.co.com/dJw4k50N/electricity-bill-icon-lighting-utilities-yellow-glowing-light-bulb-house-2-HW04-YH.jpg",
       "organization": "Nesco",
       "amount": 300,
-      "dueDate": "April 27, 2025"
+      "dueDate": "May 15, 2025"
     },
     {
       "id": 5,
       "bill_type": "Gas Bill",
-      "icon": "https://example.com/icons/gas.png",
-      "organization": "Tista",
+      "image": "https://i.ibb.co.com/ZRHyLhrM/Titas-Gas-logo.png",
+      "icon": "https://i.ibb.co.com/CKm7ZfMW/7258677.png",
+      "organization": "Tista Gas",
       "amount": 600,
-      "dueDate": "March 28, 2025"
+      "dueDate": "May 16, 2025"
     },
     {
       "id": 6,
       "bill_type": "Gas Bill",
-      "icon": "https://example.com/icons/gas.png",
+      "image": "https://i.ibb.co.com/W4H2WyGR/bakhrabad-gas-system-ltd.jpg",
+      "icon": "https://i.ibb.co.com/CKm7ZfMW/7258677.png",
       "organization": "Bakhrabad Gas",
       "amount": 800,
-      "dueDate": "April 12, 2025"
+      "dueDate": "May 17, 2025"
     },
     {
       "id": 7,
       "bill_type": "Gas Bill",
-      "icon": "https://example.com/icons/gas.png",
+      "image": "https://i.ibb.co.com/mrcmTd0X/2022-03-22-05-50-d8b0bccc4c790b8561f396eaa716d445.jpg",
+      "icon": "https://i.ibb.co.com/CKm7ZfMW/7258677.png",
       "organization": "Jalalabad Gas",
       "amount": 400,
-      "dueDate": "April 24, 2025"
+      "dueDate": "May 18, 2025"
     },
     {
       "id": 8,
       "bill_type": "Internet Bill",
-      "icon": "https://example.com/icons/internet.png",
-      "organization": "Banglalion",
+      "image": "https://i.ibb.co.com/JW9gj7kg/common-og.png",
+      "icon": "https://i.ibb.co.com/BKfxBVPh/hand-with-smartphone-internet-money-shopping-vector-30459528.jpg",
+      "organization": "Dot",
       "amount": 450,
-      "dueDate": "March 20, 2025"
+      "dueDate": "May 19, 2025"
     },
     {
       "id": 9,
       "bill_type": "Internet Bill",
-      "icon": "https://example.com/icons/internet.png",
+      "image": "https://i.ibb.co.com/rRmgqqzp/images-2.jpg",
+      "icon": "https://i.ibb.co.com/BKfxBVPh/hand-with-smartphone-internet-money-shopping-vector-30459528.jpg",
       "organization": "Link3",
       "amount": 500,
-      "dueDate": "April 15, 2025"
+      "dueDate": "May 20, 2025"
     },
     {
       "id": 10,
       "bill_type": "Internet Bill",
-      "icon": "https://example.com/icons/internet.png",
+      "image": "https://i.ibb.co.com/Xrv3ysr4/channels4-profile.jpg",
+      "icon": "https://i.ibb.co.com/BKfxBVPh/hand-with-smartphone-internet-money-shopping-vector-30459528.jpg",
       "organization": "Carnival",
       "amount": 450,
-      "dueDate": "March 30, 2025"
+      "dueDate": "May 21, 2025"
     },
     {
       "id": 11,
       "bill_type": "Internet Bill",
-      "icon": "https://example.com/icons/internet.png",
+      "image": "https://i.ibb.co.com/DgHGpcHk/images-3.jpg",
+      "icon": "https://i.ibb.co.com/BKfxBVPh/hand-with-smartphone-internet-money-shopping-vector-30459528.jpg",
       "organization": "Amber IT",
       "amount": 500,
-      "dueDate": "April 18, 2025"
+      "dueDate": "May 22, 2025"
     },
     {
       "id": 12,
       "bill_type": "Water Bill",
-      "icon": "https://example.com/icons/water.png",
+      "image": "https://i.ibb.co.com/pBJ4fXGH/Seal-of-Dhaka-Water-Supply-and-Sewerage-Authority-svg.png",
+      "icon": "https://i.ibb.co.com/1GL1Xv1q/1558896.png",
       "organization": "WASA",
       "amount": 300,
-      "dueDate": "March 27, 2025"
+      "dueDate": "May 23, 2025"
     },
     {
       "id": 13,
-      "bill_type": "Water Bill",
-      "icon": "https://example.com/icons/water.png",
-      "organization": "WASA",
-      "amount": 350,
-      "dueDate": "April 20, 2025"
+      "bill_type": "Credit Card Bill",
+      "image": "https://i.ibb.co.com/r2SGMTPg/U8-Q06e47ryj-D2-Pehh6dk-Tc-Cdloyqwyklp-EQxbtd9.jpg",
+      "icon": "https://i.ibb.co.com/Rk7sk83M/1564911.webp",
+      "organization": "DBBL",
+      "amount": 700,
+      "dueDate": "May 24, 2025"
     },
     {
       "id": 14,
-      "bill_type": "Water Bill",
-      "icon": "https://example.com/icons/water.png",
-      "organization": "WASA",
-      "amount": 300,
-      "dueDate": "April 23, 2025"
+      "bill_type": "Credit Card Bill",
+      "image": "https://i.ibb.co.com/0pxmnJxK/city-bank-bangladesh-logo-png-seeklogo-322182.png",
+      "icon": "https://i.ibb.co.com/Rk7sk83M/1564911.webp",
+      "organization": "City Bank",
+      "amount": 600,
+      "dueDate": "May 25, 2025"
     },
     {
       "id": 15,
       "bill_type": "Credit Card Bill",
-      "icon": "https://example.com/icons/creditcard.png",
-      "organization": "DBBL",
-      "amount": 700,
-      "dueDate": "April 5, 2025"
+      "image": "https://i.ibb.co.com/0jHGGJK1/images-2.png",
+      "icon": "https://i.ibb.co.com/Rk7sk83M/1564911.webp",
+      "organization": "Prime Bank",
+      "amount": 600,
+      "dueDate": "May 26, 2025"
     },
     {
       "id": 16,
       "bill_type": "Credit Card Bill",
-      "icon": "https://example.com/icons/creditcard.png",
-      "organization": "City Bank",
-      "amount": 600,
-      "dueDate": "April 15, 2025"
+      "image": "https://i.ibb.co.com/SDBSNVk7/hsbc-bank-1.png",
+      "icon": "https://i.ibb.co.com/Rk7sk83M/1564911.webp",
+      "organization": "HSBC",
+      "amount": 650,
+      "dueDate": "May 27, 2025"
     },
     {
       "id": 17,
       "bill_type": "Credit Card Bill",
-      "icon": "https://example.com/icons/creditcard.png",
-      "organization": "Standard Chartered",
-      "amount": 600,
-      "dueDate": "April 28, 2025"
-    },
-    {
-      "id": 18,
-      "bill_type": "Credit Card Bill",
-      "icon": "https://example.com/icons/creditcard.png",
-      "organization": "HSBC",
-      "amount": 650,
-      "dueDate": "April 18, 2025"
-    },
-    {
-      "id": 19,
-      "bill_type": "Credit Card Bill",
-      "icon": "https://example.com/icons/creditcard.png",
+      "image": "https://i.ibb.co.com/NdT5gg0g/eastern-bank-limited-ebl-logo-png-seeklogo-367880.png",
+      "icon": "https://i.ibb.co.com/Rk7sk83M/1564911.webp",
       "organization": "Eastern Bank",
       "amount": 400,
-      "dueDate": "April 21, 2025"
-    },
-    {
-      "id": 20,
-      "bill_type": "Credit Card Bill",
-      "icon": "https://example.com/icons/creditcard.png",
-      "organization": "Brac Bank",
-      "amount": 550,
-      "dueDate": "April 25, 2025"
+      "dueDate": "May 28, 2025"
     }
   ]

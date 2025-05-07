@@ -1,7 +1,7 @@
 import {useContext} from "react";
 import {Link, useLoaderData} from "react-router";
 import {AuthContext} from "../../ContexFile/Context";
-import Loding from "../../Loding/Loding";
+
 
 const HomeIcon = () => {
   const {user} = useContext(AuthContext);
@@ -20,7 +20,7 @@ const HomeIcon = () => {
             <div className="">
               {loding ? (
                 <div className="w-full aspect-[4/2] border-b mx-auto h-fit px-2 py-1 flex justify-center items-center">
-                  <Loding></Loding>
+                  <span className="loading loading-spinner loading-xl"></span>
                 </div>
               ) : (
                 <img

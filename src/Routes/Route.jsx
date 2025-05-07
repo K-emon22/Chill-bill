@@ -18,7 +18,6 @@ export const Route = createBrowserRouter([
         path: "/",
         element: <HomePage></HomePage>,
         loader: () => fetch("/organization.json"),
-        hydrateFallbackElement: <Loding></Loding>,
       },
       {path: "/registration", element: <Registration></Registration>},
       {
@@ -29,7 +28,6 @@ export const Route = createBrowserRouter([
         path: "/bills",
         element: <BillsPage></BillsPage>,
         loader: () => fetch("/bill.json"),
-        hydrateFallbackElement: <Loding></Loding>,
       },
       {
         path: "/profile",

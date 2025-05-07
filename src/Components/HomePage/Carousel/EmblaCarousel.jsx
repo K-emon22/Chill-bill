@@ -8,6 +8,11 @@ import {GrNext} from "react-icons/gr";
 import {FiPlay} from "react-icons/fi";
 import {IoPause} from "react-icons/io5";
 export const EmblaCarousel = () => {
+  window.scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+
   const {user, loding} = useContext(AuthContext);
 
   const [emblaRef, emblaApi] = useEmblaCarousel({loop: true}, [

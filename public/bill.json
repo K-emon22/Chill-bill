@@ -1,0 +1,162 @@
+[
+    {
+      "id": 1,
+      "bill_type": "Electricity Bill",
+      "icon": "https://example.com/icons/electricity.png",
+      "organization": "Desco",
+      "amount": 300,
+      "dueDate": "March 25, 2025"
+    },
+    {
+      "id": 2,
+      "bill_type": "Electricity Bill",
+      "icon": "https://example.com/icons/electricity.png",
+      "organization": "REB",
+      "amount": 250,
+      "dueDate": "April 10, 2025"
+    },
+    {
+      "id": 3,
+      "bill_type": "Electricity Bill",
+      "icon": "https://example.com/icons/electricity.png",
+      "organization": "PDB",
+      "amount": 450,
+      "dueDate": "April 22, 2025"
+    },
+    {
+      "id": 4,
+      "bill_type": "Electricity Bill",
+      "icon": "https://example.com/icons/electricity.png",
+      "organization": "Nesco",
+      "amount": 300,
+      "dueDate": "April 27, 2025"
+    },
+    {
+      "id": 5,
+      "bill_type": "Gas Bill",
+      "icon": "https://example.com/icons/gas.png",
+      "organization": "Tista",
+      "amount": 600,
+      "dueDate": "March 28, 2025"
+    },
+    {
+      "id": 6,
+      "bill_type": "Gas Bill",
+      "icon": "https://example.com/icons/gas.png",
+      "organization": "Bakhrabad Gas",
+      "amount": 800,
+      "dueDate": "April 12, 2025"
+    },
+    {
+      "id": 7,
+      "bill_type": "Gas Bill",
+      "icon": "https://example.com/icons/gas.png",
+      "organization": "Jalalabad Gas",
+      "amount": 400,
+      "dueDate": "April 24, 2025"
+    },
+    {
+      "id": 8,
+      "bill_type": "Internet Bill",
+      "icon": "https://example.com/icons/internet.png",
+      "organization": "Banglalion",
+      "amount": 450,
+      "dueDate": "March 20, 2025"
+    },
+    {
+      "id": 9,
+      "bill_type": "Internet Bill",
+      "icon": "https://example.com/icons/internet.png",
+      "organization": "Link3",
+      "amount": 500,
+      "dueDate": "April 15, 2025"
+    },
+    {
+      "id": 10,
+      "bill_type": "Internet Bill",
+      "icon": "https://example.com/icons/internet.png",
+      "organization": "Carnival",
+      "amount": 450,
+      "dueDate": "March 30, 2025"
+    },
+    {
+      "id": 11,
+      "bill_type": "Internet Bill",
+      "icon": "https://example.com/icons/internet.png",
+      "organization": "Amber IT",
+      "amount": 500,
+      "dueDate": "April 18, 2025"
+    },
+    {
+      "id": 12,
+      "bill_type": "Water Bill",
+      "icon": "https://example.com/icons/water.png",
+      "organization": "WASA",
+      "amount": 300,
+      "dueDate": "March 27, 2025"
+    },
+    {
+      "id": 13,
+      "bill_type": "Water Bill",
+      "icon": "https://example.com/icons/water.png",
+      "organization": "WASA",
+      "amount": 350,
+      "dueDate": "April 20, 2025"
+    },
+    {
+      "id": 14,
+      "bill_type": "Water Bill",
+      "icon": "https://example.com/icons/water.png",
+      "organization": "WASA",
+      "amount": 300,
+      "dueDate": "April 23, 2025"
+    },
+    {
+      "id": 15,
+      "bill_type": "Credit Card Bill",
+      "icon": "https://example.com/icons/creditcard.png",
+      "organization": "DBBL",
+      "amount": 700,
+      "dueDate": "April 5, 2025"
+    },
+    {
+      "id": 16,
+      "bill_type": "Credit Card Bill",
+      "icon": "https://example.com/icons/creditcard.png",
+      "organization": "City Bank",
+      "amount": 600,
+      "dueDate": "April 15, 2025"
+    },
+    {
+      "id": 17,
+      "bill_type": "Credit Card Bill",
+      "icon": "https://example.com/icons/creditcard.png",
+      "organization": "Standard Chartered",
+      "amount": 600,
+      "dueDate": "April 28, 2025"
+    },
+    {
+      "id": 18,
+      "bill_type": "Credit Card Bill",
+      "icon": "https://example.com/icons/creditcard.png",
+      "organization": "HSBC",
+      "amount": 650,
+      "dueDate": "April 18, 2025"
+    },
+    {
+      "id": 19,
+      "bill_type": "Credit Card Bill",
+      "icon": "https://example.com/icons/creditcard.png",
+      "organization": "Eastern Bank",
+      "amount": 400,
+      "dueDate": "April 21, 2025"
+    },
+    {
+      "id": 20,
+      "bill_type": "Credit Card Bill",
+      "icon": "https://example.com/icons/creditcard.png",
+      "organization": "Brac Bank",
+      "amount": 550,
+      "dueDate": "April 25, 2025"
+    }
+  ]

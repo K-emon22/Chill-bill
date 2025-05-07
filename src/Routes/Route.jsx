@@ -7,6 +7,7 @@ import BillsPage from "../Components/BillsPage/BillsPage";
 import MyProfile from "../Components/MyProfile/MyProfile";
 import UpdateInfo from "../Components/MyProfile/UpdateInfo";
 import Loding from "../Components/Loding/Loding";
+import SingleBill from "../Components/BillsPage/SingleBill/SingleBill";
 
 export const Route = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ export const Route = createBrowserRouter([
       {
         path: "/",
         element: <HomePage></HomePage>,
-        loader: () => fetch("organization.json"),
+        loader: () => fetch("/organization.json"),
         hydrateFallbackElement: <Loding></Loding>,
       },
       {path: "/registration", element: <Registration></Registration>},
@@ -27,6 +28,8 @@ export const Route = createBrowserRouter([
       {
         path: "/bills",
         element: <BillsPage></BillsPage>,
+        loader: () => fetch("/bill.json"),
+        hydrateFallbackElement: <Loding></Loding>,
       },
       {
         path: "/profile",
@@ -35,6 +38,11 @@ export const Route = createBrowserRouter([
       {
         path: "/updateinfo",
         element: <UpdateInfo></UpdateInfo>,
+      },
+      {
+        path: "/BillDetails/:id",
+        element: <SingleBill></SingleBill>,
+        loader: () => fetch("/bill.json"),
       },
     ],
   },

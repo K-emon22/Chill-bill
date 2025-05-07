@@ -3,7 +3,9 @@ import React from "react";
 const Loding = () => {
   return (
     <div className="flex items-center justify-center ">
-      <div className="h-20 w-20 border-4 border-blue-500  rounded-full animate-spin"></div>
+      <div className="flex items-center justify-center w-20 h-20">
+        <div className=" w-full h-full rounded-full border-6 border-dotted border-blue-500 animate-spin"></div>
+      </div>
     </div>
   );
 };

@@ -26,12 +26,12 @@ const Endsection = () => {
   ];
 
   return (
-    <section className="mt-20 px-2 rounded-lg ">
-      <div className="container ">
-        <h2 className="font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-10">
+    <div className="mt-20 px-2 rounded-lg ">
+
+        <h2 className="font-bold text-start text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-10">
           Latest Blog Posts
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-5">
           {blogPosts.map((post) => (
             <div
               key={post.id}
@@ -50,8 +50,8 @@ const Endsection = () => {
             </div>
           ))}
         </div>
-      </div>
-    </section>
+
+    </div>
   );
 };
 

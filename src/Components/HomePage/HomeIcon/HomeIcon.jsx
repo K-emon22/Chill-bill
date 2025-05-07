@@ -11,21 +11,20 @@ const HomeIcon = () => {
 
   return (
     <div>
-      <h1 className="font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-10">
+      <h1 className="font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 mx-10 sm:mx-0 ">
         Trusted Utility Service Brands
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5  mx-10 sm:mx-0">
         {organization.map((org) => (
-          <div key={org.id} className="border flex flex-col gap-5 rounded-lg ">
+          <div key={org.id} className="border flex  flex-col gap-1 sm:gap-2 rounded-lg ">
             <div className="">
               {loding ? (
-                <div className="w-full aspect-[4/3] border-b mx-auto h-fit px-2 py-1 flex justify-center items-center">
-                  {" "}
+                <div className="w-full aspect-[4/2] border-b mx-auto h-fit px-2 py-1 flex justify-center items-center">
                   <Loding></Loding>
                 </div>
               ) : (
                 <img
-                  className="w-full aspect-[4/3] border-b mx-auto h-fit px-2 py-1"
+                  className="w-full aspect-[4/2] border-b mx-auto h-fit px-2 py-1"
                   src={org.img}
                   alt=""
                 />

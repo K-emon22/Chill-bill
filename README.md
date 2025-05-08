@@ -1,4 +1,4 @@
-# 💡 Bill Management Web App - Marigold
+# 💡 Bill Management Web App - ChillBill
 
 This web application  allows users to view and pay utility bills online. Users can manage their profile, view due bills, and make payments securely. 
 

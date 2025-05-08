@@ -40,15 +40,15 @@ const Login = () => {
   const handleError = (e) => {
     const value = e.target.value;
     setErMessage(value);
-    if (!/[A-Z]/.test(value)) {
-      setError("Password must have an Uppercase letter.");
-
+    if (value.length < 6) {
+      setError("Password length must be atleast 6 character.");
       return;
     } else if (!/[a-z]/.test(value)) {
       setError("Password must have an Lowercase letter.");
       return;
-    } else if (value.length < 6) {
-      setError("Password length must be atleast 6 character.");
+    } else if (!/[A-Z]/.test(value)) {
+      setError("Password must have an Uppercase letter.");
+
       return;
     }
     setError("");

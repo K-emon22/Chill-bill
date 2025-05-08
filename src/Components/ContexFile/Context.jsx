@@ -35,6 +35,7 @@ export const AuthProvider = ({children}) => {
   }, []);
 
   const logout = () => {
+    localStorage.clear();
     return signOut(Auth);
   };
 

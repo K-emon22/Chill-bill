@@ -9,6 +9,7 @@ import UpdateInfo from "../Components/MyProfile/UpdateInfo";
 
 import SingleBill from "../Components/BillsPage/SingleBill/SingleBill";
 import Privaterroute from "../Components/Privaterroute/Privaterroute";
+import FinalError from "../Components/ErrorPage/FinalError";
 
 export const Route = createBrowserRouter([
   {
@@ -51,6 +52,11 @@ export const Route = createBrowserRouter([
         element: <SingleBill></SingleBill>,
         loader: () => fetch("/bill.json"),
       },
+      
     ],
+  },
+  {
+    path: "/*",
+    element: <FinalError></FinalError>,
   },
 ]);

@@ -79,9 +79,7 @@ const Login = () => {
         onSubmit={handleLogin}
         className="flex items-center flex-col gap-5 r min-h-[calc(100vh-410px)]"
       >
-        <h1 className="text-center  mt-10 font-bold  text-2xl">
-          Login Now
-        </h1>
+        <h1 className="text-center  mt-10 font-bold  text-2xl">Login Now</h1>
 
         <input
           className="border-2 w-4/5 md:w-3/6 md:h-15  font-semibold p-2 h-12 rounded-full shadow-2xl"

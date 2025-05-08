@@ -34,7 +34,11 @@ const NavBAr = () => {
             </div>
           )}
 
-          <h1 className="font-bold font-mono my-auto text-2xl sm:text-3xl font">
+          <h1
+            className={`font-bold ${
+              user ? "" : "text-[15px]"
+            } font-mono my-auto text-2xl sm:text-3xl font`}
+          >
             ChillBill
           </h1>
         </div>
@@ -117,11 +121,17 @@ const NavBAr = () => {
                 </div>
               </div>
             ) : (
-              <Link to={"/login"}>
-                <div className="flex justify-end">
-                  <button className="btn btn-primary ">Login </button>
+              <div className="flex justify-end">
+                <div>
+                  <Link to={"/login"}>
+                    <button className="btn btn-sm ">Login </button>
+                  </Link>
+                  <Link to={"/registration"}>
+                    {" "}
+                    <button className="btn btn-sm  ">Register </button>
+                  </Link>
                 </div>
-              </Link>
+              </div>
             )}
           </div>
 

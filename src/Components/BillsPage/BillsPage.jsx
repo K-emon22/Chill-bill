@@ -40,24 +40,21 @@ const BillsPage = () => {
             </div>
             <ul
               tabIndex={0}
-              className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm font-semibold"
+              className="dropdown-content border-2 menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm font-semibold"
             >
-              <li onClick={() => handleSort("All Bill")}> All Bill </li>
-              <li onClick={() => handleSort("Credit Card Bill")}>
-                {" "}
-                Credit Card Bill{" "}
+              <li className="cursor-pointer"  onClick={() => handleSort("All Bill")}> All Bill </li>
+              <li className="cursor-pointer" onClick={() => handleSort("Credit Card Bill")}>
+                 Credit Card Bill{" "}
               </li>
 
-              <li onClick={() => handleSort("Electricity Bill")}>
-                {" "}
+              <li className="cursor-pointer"  onClick={() => handleSort("Electricity Bill")}>
                 Electricity Bill{" "}
               </li>
-              <li onClick={() => handleSort("Gas Bill")}> Gas Bill </li>
-              <li onClick={() => handleSort("Internet Bill")}>
-                {" "}
+              <li className="cursor-pointer"  onClick={() => handleSort("Gas Bill")}> Gas Bill </li>
+              <li className="cursor-pointer"  onClick={() => handleSort("Internet Bill")}>
                 Internet Bill{" "}
               </li>
-              <li onClick={() => handleSort("Water Bill")}> </li>
+              <li  className="cursor-pointer" onClick={() => handleSort("Water Bill")}> </li>
             </ul>
           </div>
         </div>

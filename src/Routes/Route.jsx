@@ -9,7 +9,6 @@ import UpdateInfo from "../Components/MyProfile/UpdateInfo";
 
 import SingleBill from "../Components/BillsPage/SingleBill/SingleBill";
 import Privaterroute from "../Components/Privaterroute/Privaterroute";
-import Loding from "../Components/Loding/Loding";
 
 export const Route = createBrowserRouter([
   {
@@ -34,7 +33,6 @@ export const Route = createBrowserRouter([
           </Privaterroute>
         ),
         loader: () => fetch("/bill.json"),
-        hydrateFallbackElement: <Loding></Loding>,
       },
       {
         path: "/profile",

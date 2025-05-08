@@ -71,15 +71,15 @@ const Login = () => {
 
   return (
     <div className=" ">
-      <h1 className="text-center  mt-20 font-bold md:text-5xl text-2xl">
+      <h1 className="text-center  mt-10 font-bold md:text-5xl text-2xl">
         Login to get started!
       </h1>
 
       <form
         onSubmit={handleLogin}
-        className="flex items-center flex-col gap-5 justify-center min-h-[calc(100vh-210px)]"
+        className="flex items-center flex-col gap-5 r min-h-[calc(100vh-410px)]"
       >
-        <h1 className="text-center  mt-20 font-bold md:text-5xl text-2xl">
+        <h1 className="text-center  mt-10 font-bold  text-2xl">
           Login Now
         </h1>
 

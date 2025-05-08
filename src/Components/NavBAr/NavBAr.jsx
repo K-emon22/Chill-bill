@@ -76,7 +76,7 @@ const NavBAr = () => {
           </div>
         </div>
 
-        <div className="w-[80px] my-auto flex flex-row">
+        <div className="  my-auto flex flex-row">
           <div className={`ml-auto my-auto md:block`}>
             {loding ? (
               <div className="flex justify-end">
@@ -84,11 +84,11 @@ const NavBAr = () => {
               </div>
             ) : user ? (
               <div className="flex flex-row gap-3  justify-end">
-                <div className="dropdown dropdown-end">
+                <div className="dropdown dropdown-end ">
                   <div tabIndex={0} role="button" className=" m-1">
                     <div className=" ">
                       <img
-                        className=" md:w-[60px] rounded-full md:h-[50px]  "
+                        className=" md:w-[60px] w-[40px] rounded-full   "
                         src={photo}
                         alt=""
                         referrerPolicy="no-referrer"
@@ -97,9 +97,9 @@ const NavBAr = () => {
                   </div>
                   <ul
                     tabIndex={0}
-                    className="dropdown-content menu rounded-box z-1 w-52 p-2 shadow-sm"
+                    className="dropdown-content menu rounded-box z-1 w-52 p-2 shadow-sm border-2 bg-white"
                   >
-                    <li className="flex flex-row">
+                    <li className="flex flex-row ">
                       <h1>
                         <span className="font-semibold">Balance: </span>
                         <span className="font-bold">{taka}</span>Taka
@@ -119,9 +119,7 @@ const NavBAr = () => {
             ) : (
               <Link to={"/login"}>
                 <div className="flex justify-end">
-                  <button className="btn btn-primary hidden   md:block">
-                    Login{" "}
-                  </button>
+                  <button className="btn btn-primary ">Login </button>
                 </div>
               </Link>
             )}
@@ -140,43 +138,47 @@ const NavBAr = () => {
             </div>
             <ul
               tabIndex={0}
-              className="dropdown-content menu bg-base-100 top-10 absolute rounded-box z-1 w-52 font-semibold p-2 shadow-sm"
+              className="dropdown-content menu bg-base-100 top-10 border-2 absolute rounded-box z-1 w-52 font-semibold p-2 shadow-sm"
             >
+              <NavLink
+                className={({isActive}) =>
+                  `p-1  lg:px-2 ${
+                    isActive
+                      ? "bg-[rgb(238,102,102)] rounded-lg text-white"
+                      : ""
+                  }`
+                }
+                to={"/"}
+              >
+                <h1>Home</h1>
+              </NavLink>
 
-            <NavLink
-              className={({isActive}) =>
-                `p-1  lg:px-2 ${
-                  isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
-                }`
-              }
-              to={"/"}
-            >
-              <h1>Home</h1>
-            </NavLink>
+              <NavLink
+                className={({isActive}) =>
+                  `p-1 lg:px-2 ${
+                    isActive
+                      ? "bg-[rgb(238,102,102)] rounded-lg text-white"
+                      : ""
+                  }`
+                }
+                to={"/bills"}
+              >
+                {" "}
+                <h1> Bills Page</h1>
+              </NavLink>
 
-            <NavLink
-              className={({isActive}) =>
-                `p-1 lg:px-2 ${
-                  isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
-                }`
-              }
-              to={"/bills"}
-            >
-              {" "}
-              <h1> Bills Page</h1>
-            </NavLink>
-
-            <NavLink
-              className={({isActive}) =>
-                `p-1 lg:px-2 ${
-                  isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
-                }`
-              }
-              to={"/profile"}
-            >
-              <h1>My Profile</h1>
-            </NavLink>
-
+              <NavLink
+                className={({isActive}) =>
+                  `p-1 lg:px-2 ${
+                    isActive
+                      ? "bg-[rgb(238,102,102)] rounded-lg text-white"
+                      : ""
+                  }`
+                }
+                to={"/profile"}
+              >
+                <h1>My Profile</h1>
+              </NavLink>
             </ul>
           </div>
         </div>

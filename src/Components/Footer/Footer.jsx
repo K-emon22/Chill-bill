@@ -1,14 +1,10 @@
-import React, {useContext} from "react";
-import {AuthContext} from "../ContexFile/Context";
 import {NavLink} from "react-router";
 
 const Footer = () => {
-  const {user} = useContext(AuthContext);
   return (
     <div className="mt-20">
       <footer className="footer footer-horizontal footer-center gap-2 bg-black text-primary-content p-10">
-      <aside>
-
+        <aside>
           <img
             src={"https://i.ibb.co.com/3yt4wYsW/image-7-2.jpg"}
             className="w-[50px] h-[50px] fill-current inline-block rounded-lg border-2 border-white "
@@ -20,18 +16,17 @@ const Footer = () => {
             Providing reliable tech since 1992
           </p>
           <div className=" flex flex-row">
-          <NavLink
-            className={({isActive}) =>
-              `p-1  lg:px-2 ${
-                isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
-              }`
-            }
-            to={"/"}
-          >
-            <h1>Home</h1>
-          </NavLink>
+            <NavLink
+              className={({isActive}) =>
+                `p-1  lg:px-2 ${
+                  isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
+                }`
+              }
+              to={"/"}
+            >
+              <h1>Home</h1>
+            </NavLink>
 
-          {user ? (
             <NavLink
               className={({isActive}) =>
                 `p-1 lg:px-2 ${
@@ -43,36 +38,19 @@ const Footer = () => {
               {" "}
               <h1> Bills Page</h1>
             </NavLink>
-          ) : (
+
             <NavLink
               className={({isActive}) =>
                 `p-1 lg:px-2 ${
                   isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
                 }`
               }
-              to={"/login"}
+              to={"/profile"}
             >
-              {" "}
-              <h1> Bills Page</h1>
+              <h1>My Profile</h1>
             </NavLink>
-          )}
-
-          <NavLink
-            className={({isActive}) =>
-              `p-1 lg:px-2 ${
-                isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
-              }`
-            }
-            to={"/profile"}
-          >
-            {" "}
-            <h1>My Profile</h1>
-          </NavLink>
-        </div>
-       
+          </div>
         </aside>
-
-       
 
         <nav className="mt-2">
           <div className="grid grid-flow-col gap-4">
@@ -110,7 +88,9 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-          <p className="mt-2">Copyright © {new Date().getFullYear()} - All right reserved</p>
+          <p className="mt-2">
+            Copyright © {new Date().getFullYear()} - All right reserved
+          </p>
         </nav>
       </footer>
     </div>

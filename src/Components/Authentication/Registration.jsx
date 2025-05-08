@@ -27,7 +27,7 @@ const Registration = () => {
 
         updateProfile(user, {photoURL: photo, displayName: name});
 
-        navigate("/login");
+        navigate("/");
       })
       .catch((error) => {
         console.error(error);
@@ -54,17 +54,15 @@ const Registration = () => {
 
   return (
     <div className=" ">
-      <h1 className="text-center  mt-20 font-bold md:text-5xl text-2xl">
+      <h1 className="text-center  mt-10 font-bold md:text-5xl text-2xl">
         Sign up to get started!
       </h1>
 
       <form
         onSubmit={handleSignup}
-        className="flex items-center flex-col gap-5 justify-center min-h-[calc(100vh-210px)]"
+        className="flex items-center flex-col gap-5  min-h-[calc(100vh-410px)]"
       >
-        <h1 className="text-center  mt-20 font-bold md:text-5xl text-2xl">
-          Register Now
-        </h1>
+        <h1 className="text-center  mt-10 font-bold text-2xl">Register Now</h1>
 
         <input
           className="border-2 w-4/5 md:w-3/6 md:h-15  font-semibold p-2 h-12 rounded-full shadow-2xl"

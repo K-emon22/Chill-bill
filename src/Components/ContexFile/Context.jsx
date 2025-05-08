@@ -10,9 +10,11 @@ import {
 import {createContext, useEffect, useState} from "react";
 import {Auth} from "../FirebaseAuth/firebase.init";
 
+
 export const AuthContext = createContext(null);
 
 export const AuthProvider = ({children}) => {
+
   const provider = new GoogleAuthProvider();
   const [user, setUser] = useState(null);
   const [loding, setLoding] = useState(true);
@@ -36,6 +38,7 @@ export const AuthProvider = ({children}) => {
 
   const logout = () => {
     localStorage.clear();
+
     return signOut(Auth);
   };
 

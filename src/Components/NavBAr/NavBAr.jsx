@@ -110,12 +110,13 @@ const NavBAr = () => {
                       </h1>
                     </li>
                     <li className="">
+                      <Link to={'/'}>
                       <button
                         onClick={logout}
                         className=" btn btn-primary my-auto "
                       >
                         Logout{" "}
-                      </button>
+                      </button></Link>
                     </li>
                   </ul>
                 </div>

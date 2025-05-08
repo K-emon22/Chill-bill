@@ -1,8 +1,12 @@
 import React, {useContext, useState} from "react";
 import {AuthContext} from "../ContexFile/Context";
+import {useLocation, useNavigate} from "react-router";
 import {Link} from "react-router";
 import {FaGoogle} from "react-icons/fa";
 const Login = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
   const [error, setError] = useState("");
 
   const [erMessage, setErMessage] = useState("");
@@ -18,11 +22,19 @@ const Login = () => {
     loginUser(email, password)
       .then((result) => {
         console.log(result);
+        navigate(from, {replace: true});
       })
       .catch((error) => {
         console.error(error);
         setError(` Failed To Login, ${error.code}`);
       });
+  };
+
+  const handleLoginGoogle = (e) => {
+    e.preventDefault();
+    googleLogin().then(() => {
+      navigate(from, {replace: true});
+    });
   };
 
   const handleError = (e) => {
@@ -90,7 +102,7 @@ const Login = () => {
           required
         />
         <button
-          onClick={googleLogin}
+          onClick={handleLoginGoogle}
           type="button"
           className="border-2 cursor-pointer flex flex-row justify-center gap-3 hover:bg-blue-300 transition-transform w-4/5 md:w-3/6 md:h-15 font-semibold p-2 h-12 rounded-full shadow-2xl"
         >

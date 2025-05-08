@@ -6,8 +6,9 @@ const Footer = () => {
   const {user} = useContext(AuthContext);
   return (
     <div className="mt-20">
-      <footer className="footer footer-horizontal footer-center bg-black text-primary-content p-10">
-        <aside>
+      <footer className="footer footer-horizontal footer-center gap-2 bg-black text-primary-content p-10">
+      <aside>
+
           <img
             src={"https://i.ibb.co.com/3yt4wYsW/image-7-2.jpg"}
             className="w-[50px] h-[50px] fill-current inline-block rounded-lg border-2 border-white "
@@ -18,10 +19,7 @@ const Footer = () => {
             <br />
             Providing reliable tech since 1992
           </p>
-          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-        </aside>
-
-        <div className=" flex flex-row">
+          <div className=" flex flex-row">
           <NavLink
             className={({isActive}) =>
               `p-1  lg:px-2 ${
@@ -71,8 +69,12 @@ const Footer = () => {
             <h1>My Profile</h1>
           </NavLink>
         </div>
+       
+        </aside>
 
-        <nav>
+       
+
+        <nav className="mt-2">
           <div className="grid grid-flow-col gap-4">
             <a href="https://twitter.com/ProgrammingHero" target="_blank">
               <svg
@@ -108,6 +110,7 @@ const Footer = () => {
               </svg>
             </a>
           </div>
+          <p className="mt-2">Copyright © {new Date().getFullYear()} - All right reserved</p>
         </nav>
       </footer>
     </div>

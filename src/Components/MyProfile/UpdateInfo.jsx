@@ -23,7 +23,7 @@ const UpdateInfo = () => {
   };
 
   return (
-    <div className="min-h-[calc(100vh-180px)] mt-20">
+    <div className="min-h-[calc(100vh-480px)] mt-10">
       <form onSubmit={handleUpdate} className="">
         <h1 className="text-center font-bold text-xl sm:text-2xl">
           Edit Your Name & Profile Picture.{" "}

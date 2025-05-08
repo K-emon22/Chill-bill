@@ -6,8 +6,9 @@ import Login from "../Components/Authentication/Login";
 import BillsPage from "../Components/BillsPage/BillsPage";
 import MyProfile from "../Components/MyProfile/MyProfile";
 import UpdateInfo from "../Components/MyProfile/UpdateInfo";
-import Loding from "../Components/Loding/Loding";
+
 import SingleBill from "../Components/BillsPage/SingleBill/SingleBill";
+import Privaterroute from "../Components/Privaterroute/Privaterroute";
 
 export const Route = createBrowserRouter([
   {
@@ -26,12 +27,20 @@ export const Route = createBrowserRouter([
       },
       {
         path: "/bills",
-        element: <BillsPage></BillsPage>,
+        element: (
+          <Privaterroute>
+            <BillsPage></BillsPage>
+          </Privaterroute>
+        ),
         loader: () => fetch("/bill.json"),
       },
       {
         path: "/profile",
-        element: <MyProfile></MyProfile>,
+        element: (
+          <Privaterroute>
+            <MyProfile></MyProfile>
+          </Privaterroute>
+        ),
       },
       {
         path: "/updateinfo",
@@ -44,5 +53,4 @@ export const Route = createBrowserRouter([
       },
     ],
   },
-  {},
 ]);

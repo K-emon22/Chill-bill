@@ -51,35 +51,17 @@ const NavBAr = () => {
               <h1>Home</h1>
             </NavLink>
 
-            {user ? (
-              <NavLink
-                className={({isActive}) =>
-                  `p-1 lg:px-2 ${
-                    isActive
-                      ? "bg-[rgb(238,102,102)] rounded-lg text-white"
-                      : ""
-                  }`
-                }
-                to={"/bills"}
-              >
-                {" "}
-                <h1> Bills Page</h1>
-              </NavLink>
-            ) : (
-              <NavLink
-                className={({isActive}) =>
-                  `p-1 lg:px-2 ${
-                    isActive
-                      ? "bg-[rgb(238,102,102)] rounded-lg text-white"
-                      : ""
-                  }`
-                }
-                to={"/login"}
-              >
-                {" "}
-                <h1> Bills Page</h1>
-              </NavLink>
-            )}
+            <NavLink
+              className={({isActive}) =>
+                `p-1 lg:px-2 ${
+                  isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
+                }`
+              }
+              to={"/bills"}
+            >
+              {" "}
+              <h1> Bills Page</h1>
+            </NavLink>
 
             <NavLink
               className={({isActive}) =>
@@ -89,7 +71,6 @@ const NavBAr = () => {
               }
               to={"/profile"}
             >
-              {" "}
               <h1>My Profile</h1>
             </NavLink>
           </div>
@@ -139,7 +120,6 @@ const NavBAr = () => {
               <Link to={"/login"}>
                 <div className="flex justify-end">
                   <button className="btn btn-primary hidden   md:block">
-                    {" "}
                     Login{" "}
                   </button>
                 </div>
@@ -160,64 +140,43 @@ const NavBAr = () => {
             </div>
             <ul
               tabIndex={0}
-              className="dropdown-content menu bg-base-100 top-10 absolute rounded-box z-1 w-52 p-2 shadow-sm"
+              className="dropdown-content menu bg-base-100 top-10 absolute rounded-box z-1 w-52 font-semibold p-2 shadow-sm"
             >
-              <NavLink
-                className={({isActive}) =>
-                  `p-1  lg:px-2 ${
-                    isActive
-                      ? "bg-[rgb(238,102,102)] rounded-lg text-white"
-                      : ""
-                  }`
-                }
-                to={"/"}
-              >
-                <h1>Home</h1>
-              </NavLink>
 
-              {user ? (
-                <NavLink
-                  className={({isActive}) =>
-                    `p-1 lg:px-2 ${
-                      isActive
-                        ? "bg-[rgb(238,102,102)] rounded-lg text-white"
-                        : ""
-                    }`
-                  }
-                  to={"/bills"}
-                >
-                  {" "}
-                  <h1> Bills Page</h1>
-                </NavLink>
-              ) : (
-                <NavLink
-                  className={({isActive}) =>
-                    `p-1 lg:px-2 ${
-                      isActive
-                        ? "bg-[rgb(238,102,102)] rounded-lg text-white"
-                        : ""
-                    }`
-                  }
-                  to={"/login"}
-                >
-                  {" "}
-                  <h1> Bills Page</h1>
-                </NavLink>
-              )}
+            <NavLink
+              className={({isActive}) =>
+                `p-1  lg:px-2 ${
+                  isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
+                }`
+              }
+              to={"/"}
+            >
+              <h1>Home</h1>
+            </NavLink>
 
-              <NavLink
-                className={({isActive}) =>
-                  `p-1 lg:px-2 ${
-                    isActive
-                      ? "bg-[rgb(238,102,102)] rounded-lg text-white"
-                      : ""
-                  }`
-                }
-                to={"/profile"}
-              >
-                {" "}
-                <h1>My Profile</h1>
-              </NavLink>
+            <NavLink
+              className={({isActive}) =>
+                `p-1 lg:px-2 ${
+                  isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
+                }`
+              }
+              to={"/bills"}
+            >
+              {" "}
+              <h1> Bills Page</h1>
+            </NavLink>
+
+            <NavLink
+              className={({isActive}) =>
+                `p-1 lg:px-2 ${
+                  isActive ? "bg-[rgb(238,102,102)] rounded-lg text-white" : ""
+                }`
+              }
+              to={"/profile"}
+            >
+              <h1>My Profile</h1>
+            </NavLink>
+
             </ul>
           </div>
         </div>

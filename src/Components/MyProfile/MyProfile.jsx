@@ -15,8 +15,8 @@ const MyProfile = () => {
   console.log(user?.photoURL);
 
   return (
-    <div className="min-h-[calc(100vh-420px)] flex justify-center  ">
-      <div className="flex flex-col mt-20 relative">
+    <div className="flex justify-center mb-50 ">
+      <div className="flex flex-col mt-10 relative">
         <div className="  border-4 border-green-500 h-[228px] w-[228px] flex justify-center items-center rounded-full">
           <img
             className="w-45 rounded-full"

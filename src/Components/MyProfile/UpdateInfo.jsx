@@ -6,7 +6,6 @@ import {useNavigate} from "react-router";
 const UpdateInfo = () => {
   const {user} = useContext(AuthContext);
 
-  console.log(user);
   const navigate = useNavigate();
   const handleUpdate = (e) => {
     e.preventDefault();
@@ -14,7 +13,6 @@ const UpdateInfo = () => {
     const name = e.target.name.value;
     const profile = e.target.profile.value;
 
-    console.log("emon");
     updateProfile(user, {
       displayName: name,
       photoURL: profile,

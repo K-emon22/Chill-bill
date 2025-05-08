@@ -17,20 +17,17 @@ const Registration = () => {
     const password = e.target.password.value;
     const name = e.target.name.value;
     const photo = e.target.photo.value;
-    console.log(photo);
 
     createuser(email, password)
       .then((result) => {
         const user = result.user;
 
         console.log(result);
-
         updateProfile(user, {photoURL: photo, displayName: name});
 
         navigate("/");
       })
       .catch((error) => {
-        console.error(error);
         setError(` Failed To Register, ${error.code}`);
       });
   };

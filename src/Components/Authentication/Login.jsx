@@ -20,12 +20,10 @@ const Login = () => {
     const password = e.target.password.value;
 
     loginUser(email, password)
-      .then((result) => {
-        console.log(result);
+      .then(() => {
         navigate(from, {replace: true});
       })
       .catch((error) => {
-        console.error(error);
         setError(` Failed To Login, ${error.code}`);
       });
   };

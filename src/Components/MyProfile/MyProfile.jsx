@@ -9,10 +9,8 @@ const MyProfile = () => {
   });
 
   const {user} = useContext(AuthContext);
-  console.log(user);
-  console.log(user?.displayName);
+
   const photo = user?.photoURL;
-  console.log(user?.photoURL);
 
   return (
     <div className="flex justify-center mb-50 ">

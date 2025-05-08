@@ -85,7 +85,7 @@ const SingleBill = () => {
           <button
             onClick={handlePay}
             className={`btn btn-primary w-full border-black border-2 ${
-              button && "cursor-not-allowed  bg-gray-400 border-2"
+              button && "cursor-not-allowed   bg-gray-400 border-2"
             }`}
           >
             Pay Bill{" "}

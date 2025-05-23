@@ -11,7 +11,6 @@ import {AuthProvider} from "./Components/ContexFile/Context";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <AuthProvider>
-    
       <RouterProvider router={Route}></RouterProvider>
     </AuthProvider>
   </StrictMode>

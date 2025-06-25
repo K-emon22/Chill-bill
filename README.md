@@ -13,7 +13,7 @@ This web application allows users to view and pay utility bills online. Users ca
 ## 📦 Technologies and Major Packages Used
 
 - **React** – `react`
-- **React Router** – `react-router`
+- **React Router** – `react-router` 
 - **Tailwind CSS** – `tailwindcss`
 - **DaisyUI** – `daisyui`
 - **Vite** – `vite`

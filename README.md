@@ -7,7 +7,6 @@ This web application allows users to view and pay utility bills online. Users ca
 ## 🚀 Live Project
 
 - **Live URL:** [https://chill-bill.netlify.app/](https://chill-bill.netlify.app/)
-- **GitHub Repo:** [https://github.com/programming-hero-web-course1/b11a9-react-authentication-K-emon22](https://github.com/programming-hero-web-course1/b11a9-react-authentication-K-emon22)
 
 ---
 

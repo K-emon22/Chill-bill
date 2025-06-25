@@ -31,7 +31,6 @@ This web application  allows users to view and pay utility bills online. Users c
 
 ## 🧩 Features
 
-- 🔐 **Authentication**: Email/password login, Google sign-in, protected routes, and password validation.
 - 🧾 **Bill Management**: View, filter, and pay utility bills like electricity, gas, water, etc.
 - 💳 **My Profile**: Display user info and allow updates to profile photo and name.
 - 🧠 **Bill Filtering**: Filter bills by bill type via dropdown.

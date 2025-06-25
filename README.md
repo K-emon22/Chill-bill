@@ -43,7 +43,6 @@ This web application allows users to view and pay utility bills online. Users ca
 
 ### 🔷 Home
 - Navbar, carousel, organization icons grid
-- 4+ inspired sections from Bangladesh banking websites
 - Footer
 
 ### 🔐 Login / Register
